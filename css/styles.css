@@ -43,7 +43,7 @@ div.login span, .header .emoji, div.login a, div.links {
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* Internet Explorer/Edge */
 }
-.nav-bar .search svg:hover {
+.nav-bar .search svg:hover, div.login a:hover {
   color: var(--main);
 }
 

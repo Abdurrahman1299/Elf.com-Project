@@ -17,12 +17,3 @@ button.onclick = function () {
 }
 // END MAKING A SCROLL TO TOP BUTTON
 
-
-// MAKING THE ENTER AND SEARCH ICON EVENT TO SEARCH FOR THE MOVIE'S POSTERS ON GOOGLE PICS
-document.getElementById("sbutton").addEventListener('click', function () {
-  console.log(val)
-})
-var val = document.getElementById("search-box").value;
-
-
-// END MAKING THE ENTER AND SEARCH ICON EVENT TO SEARCH FOR THE MOVIE'S POSTERS ON GOOGLE PICS
