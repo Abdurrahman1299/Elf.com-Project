@@ -16,7 +16,12 @@
   </head>
   <body>
     <header class="header">
-      <img onclick="window.location='pics/logo.png'" src="pics/logo2.png" alt="logo pic" class="logo" />
+      <img
+        onclick="window.location='pics/logo.png'"
+        src="pics/logo2.png"
+        alt="logo pic"
+        class="logo"
+      />
       <div class="emoji">Enjoy Your Time &#128516;</div>
       <div class="login">
         <a href="login.html" target="_blank">Login/Register</a>
@@ -41,13 +46,82 @@
             ></path>
           </g>
         </svg>
-        <input type="text" class="search-box" placeholder="search for movie" id="search-box" />
+        <input
+          type="search"
+          class="search-box"
+          placeholder="movie name"
+          id="search-box"
+        />
       </div>
-      <div class="triangle"><span class="txt">Choose</span>&#x1F53B</div>
       <div class="links">
         <a href="#">Most Popular</a>
         <a href="#">Top Rated</a>
-        <a href="#">Choose by<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"></path></svg></a>
+        <div id="chooseBtn">
+          Choose by<svg
+            stroke="currentColor"
+            fill="currentColor"
+            stroke-width="0"
+            viewBox="0 0 1024 1024"
+            height="1em"
+            width="1em"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M884 256h-75c-5.1 0-9.9 2.5-12.9 6.6L512 654.2 227.9 262.6c-3-4.1-7.8-6.6-12.9-6.6h-75c-6.5 0-10.3 7.4-6.5 12.7l352.6 486.1c12.8 17.6 39 17.6 51.7 0l352.6-486.1c3.9-5.3.1-12.7-6.4-12.7z"
+            ></path>
+          </svg>
+        </div>
+      </div>
+      <div class="drop-list" id="drop-list">
+        <svg
+          id="arrow-icon"
+          stroke="currentColor"
+          fill="currentColor"
+          stroke-width="0"
+          viewBox="0 0 16 16"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M7.022 1.566a1.13 1.13 0 011.96 0l6.857 11.667c.457.778-.092 1.767-.98 1.767H1.144c-.889 0-1.437-.99-.98-1.767L7.022 1.566z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+        <select id="year" name="year"></select>
+        <select name="country" id="country">
+          <option value="none">-country-</option>
+          <option value="usa">United States</option>
+          <option value="eg">Egypt</option>
+          <option value="uk">United Kingdom</option>
+          <option value="fr">France</option>
+          <option value="sp">Spain</option>
+          <option value="jp">Japan</option>
+          <option value="chi">China</option>
+          <option value="ko">Korea</option>
+        </select>
+        <select name="lang" id="lang">
+          <option value="none">-Language-</option>
+          <option value="eng">English</option>
+          <option value="ar">العربية</option>
+          <option value="fr">French</option>
+          <option value="sp">Spanish</option>
+          <option value="chi">Chinese</option>
+          <option value="jp">Japanese</option>
+          <option value="ko">Korean</option>
+          <option value="far">فارسى</option>
+        </select>
+        <select name="type" id="type">
+          <option value="none">-type-</option>
+          <option value="action">action</option>
+          <option value="action">drama</option>
+          <option value="action">suspence</option>
+          <option value="action">romantic</option>
+          <option value="action">history</option>
+          <option value="action">war</option>
+        </select>
+        <button id="ok-btn">OK</button>
       </div>
       <div class="login-res">
         <a href="#">Login</a>

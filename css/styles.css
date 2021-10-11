@@ -94,14 +94,15 @@ div.links {
   /* that's to prevent wrapping */
   white-space: nowrap;
 }
-div.links a {
+div.links a, div.links div {
   text-decoration: none;
   font-size: 20px;
   font-family: inherit;
   font-weight: bold;
   color: var(--darken);
+  cursor: pointer;
 }
-div.links a:hover {
+div.links a:hover, div.links div:hover {
   color: var(--main);
 }
 
@@ -126,4 +127,60 @@ button#top {
   cursor: pointer;
 } button#top:hover{
   background-color: var(--main);
+}
+
+svg#arrow-icon {
+  position: absolute;
+  font-size: 2em;
+  top: -31px;
+  right: -5px;
+  color: var(--lighten);
+}
+nav div.drop-list {
+  padding: 10px;
+  position: absolute;
+  top: 205px;
+  right: 5em;
+  background: var(--silver);
+  width: 50em;
+  min-height: 24em;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: nowrap;
+  border: solid var(--lighten) 5px;
+  border-radius: 3px;
+  display: none;
+}nav div.drop-list-show, nav div.triangle {
+  display: flex;
+}
+.drop-list select {
+  height: 2em;
+  display: block;
+  margin: 7px;
+  min-width: 23%;
+  text-align: center;
+  outline: none;
+  border: none;
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: bold;
+  color: var(--main);
+  background: var(--lighten);
+  transition: 0.5s;
+}
+button#ok-btn {
+  position: absolute;
+  top: 86%;
+  right: 20%;
+  width: 500px;
+  font-size: 30px;
+  font-family: inherit;
+  font-weight: bold;
+  color: var(--silver);
+  background: var(--main);
+  outline: none;
+  border: none;
+  cursor: pointer;
+}button#ok-btn:hover{
+  background: var(--darken);
 }
