@@ -1,0 +1,119 @@
+/* TABLET RESPONSIVE DESIGN */
+@media (min-width: 768px) and (max-width: 1025px) {
+  body {
+    background-color: tomato;
+  }
+  header.header {
+    height: 140px;
+  }
+  .header img {
+  width: 23em;
+  }
+  .header .emoji {
+    display: none;
+  }
+  div.login a, div.login span {
+    font-size: 2.3em;
+    font-weight: bold;
+  }
+  .nav-bar .search .search-box {
+    height: 2.2em;
+    border-radius: 1.25em;
+  }
+  div.links{
+    display: none;
+  }
+  div.triangle{
+    display: block;
+    font-size: 2em;
+    font-weight: bold;
+    cursor: pointer;
+    color: var(--darken);
+  }
+  div.triangle:hover{
+    color: var(--main);
+  }
+  nav.nav-bar {
+    justify-content: space-evenly;
+  }
+}
+
+
+/* 
+  Device = Low Resolution Tablets, Mobiles (Landscape)
+  Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  body {
+      background-color: blueviolet;
+    }
+    .header img {
+  width: 18em;
+  }
+  .header .emoji , div.links , .triangle .txt{
+    display: none;
+  }
+  div.login a, div.login span {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .nav-bar .search .search-box {
+    height: 2em;
+    border-radius: 1em;
+  }
+  div.triangle{
+    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  nav.nav-bar {
+    justify-content: space-evenly;
+  }
+}
+
+
+
+/* MOBILE RESPONSIVE DESIGN */
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    background-color: greenyellow;
+  }
+  header.header {
+    justify-content: center;
+  }
+  .header img {
+  width: 20em;
+  }
+  .header .emoji , div.links , .triangle .txt , .nav-bar .search input , .header .login{
+    display: none;
+  }
+  div.login a, div.login span {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  .nav-bar .search svg {
+    color: var(--darken);
+    cursor: pointer;
+    margin-right: 165px;
+}
+  div.triangle{
+    display: block;
+    font-size: 1.8em;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  nav.nav-bar {
+    justify-content: space-between;
+  }
+  .nav-bar .login-res {
+    display: block;
+  }
+  .nav-bar .login-res a {
+    text-decoration: none;
+    /* font-size: 20px; */
+    font-weight: bold;
+    color: var(--darken);
+  }
+}

@@ -1,0 +1,102 @@
+:root {
+  --main: #1c658e;
+  --darken: #0e3755;
+  --lighten: #8abdda;
+  --silver: #c1d4e5;
+  --gray: rgba(0, 0, 0, 0.7);
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: var(--darken);
+  background-size: cover;
+}
+
+div.card{
+  background: var(--gray);
+  color: white;
+  padding: 20px;
+  border-radius: 30px;
+}
+div.card label {
+  font-size: 2em;
+  margin: 1em;
+}
+
+.card form {
+  width: 400px;
+  border: solid, 3px, red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card form input {
+  width: 80%;
+  margin: 15px;
+  height: 2em;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 5px;
+  font-size: 17px;
+  letter-spacing: 1px;
+  font-weight: bold;
+  color: var(--darken);
+}
+.card form input#submit {
+  width: 30%;
+  height: 2em;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+  letter-spacing: 0px;
+  color: var(--darken);
+  cursor: pointer;
+}.card form input#submit:hover {
+  background: var(--lighten);
+}
+.card form input::placeholder{
+  color: var(--lighten);
+}
+
+.card div a.reg {
+  text-decoration: none;
+  color: var(--main);
+}
+.card div a.reg:hover , .card div.gog a:hover {
+  color: var(--lighten);
+  border-color: var(--silver);
+}
+.card div.gog {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card div.gog a {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: solid 2px var(--main);
+  border-radius: 5px;
+  text-decoration: none;
+  color: var(--main);
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.card div.gog a span.face {
+  margin-left:120px;
+}
+.card div.gog a span.google {
+  margin-left:130px;
+}

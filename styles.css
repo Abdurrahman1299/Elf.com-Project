@@ -1,0 +1,106 @@
+:root {
+  --main: #1c658e;
+  --darken: #0e3755;
+  --lighten: #8abdda;
+  --silver: #c1d4e5;
+}
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  height: 5px;
+  position: relative;
+}
+
+header.header {
+  background: var(--silver);
+  height: 5px;
+  display: flex;
+  padding: 15px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header img {
+  width: 18em;
+  height: 7em;
+  cursor: pointer;
+  padding-top: 4px;
+}
+
+div.login a, div.login span {
+  text-decoration: none;
+  font-size: 2.5em;
+  color: var(--darken);
+}
+.header .emoji {
+  font-weight: bold;
+}
+div.login span, .header .emoji {
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+div.login a:hover, .nav-bar .search svg:hover {
+  color: var(--main);
+}
+
+nav.nav-bar {
+  height: 5vh;
+  background: #8abddab9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+}
+
+div.search {
+  display: flex;
+  align-items: center;
+}
+
+.nav-bar .search svg {
+    margin-right: 1em;
+    color: var(--darken);
+    cursor: pointer;
+}
+
+.nav-bar .search .search-box {
+  width: 18em;
+  height: 2em;
+  border: none;
+  outline: none;
+  border-radius: 1em;
+  background: var(--silver);
+  padding-left: 1em;
+  color: var(--darken);
+  font-size: 1em;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  caret-color: var(--main);
+}
+.nav-bar .search .search-box::placeholder {
+  color: var(--main);
+  text-transform: capitalize;
+}
+
+div.links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 45%;
+  /* that's to prevent wrapping */
+  white-space: nowrap;
+}
+div.links a {
+  text-decoration: none;
+  font-size: 20px;
+  font-family: inherit;
+  font-weight: bold;
+  color: var(--darken);
+}
+div.links a:hover {
+  color: var(--main);
+}
